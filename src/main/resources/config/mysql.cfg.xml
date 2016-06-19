@@ -26,5 +26,6 @@
 		<!-- mapping of entities -->
 		<mapping resource="config/student.hbm.xml" />
 		<mapping resource="config/employee.hbm.xml" />
+		<mapping resource="config/bookmovie.hbm.xml" />
 	</session-factory>
 </hibernate-configuration>
