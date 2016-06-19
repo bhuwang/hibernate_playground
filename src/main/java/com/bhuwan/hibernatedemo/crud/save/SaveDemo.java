@@ -26,9 +26,9 @@ public class SaveDemo {
         // to persist data to db you must use transaction.
         Transaction t = session.beginTransaction();
         Student stu = new Student();
-        stu.setId(44);
-        stu.setName("Bhuwan Guatam");
-        stu.setEmail("bgpeace01@gmail.com");
+        stu.setId(236);
+        stu.setName("Suman Gurung");
+        stu.setEmail("suman@gmail.com");
         long pk = (long) session.save(stu);
         System.out.println("primary key is: " + pk);
         t.commit();
