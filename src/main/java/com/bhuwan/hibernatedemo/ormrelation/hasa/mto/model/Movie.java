@@ -11,6 +11,7 @@ public class Movie {
 
     private int id;
     private String movieName;
+    private Actor actor;
 
     /**
      * @return the id
@@ -40,6 +41,21 @@ public class Movie {
      */
     public void setMovieName(String movieName) {
         this.movieName = movieName;
+    }
+
+    /**
+     * @return the actor
+     */
+    public Actor getActor() {
+        return actor;
+    }
+
+    /**
+     * @param actor
+     *            the actor to set
+     */
+    public void setActor(Actor actor) {
+        this.actor = actor;
     }
 
 }

@@ -3,8 +3,6 @@
  */
 package com.bhuwan.hibernatedemo.ormrelation.hasa.mto.model;
 
-import java.util.Set;
-
 /**
  * @author bhuwan
  *
@@ -13,7 +11,6 @@ public class Actor {
 
     private int id;
     private String actorName;
-    private Set<Movie> movies;
 
     /**
      * @return the id
@@ -43,21 +40,6 @@ public class Actor {
      */
     public void setActorName(String actorName) {
         this.actorName = actorName;
-    }
-
-    /**
-     * @return the movies
-     */
-    public Set<Movie> getMovies() {
-        return movies;
-    }
-
-    /**
-     * @param movies
-     *            the movies to set
-     */
-    public void setMovies(Set<Movie> movies) {
-        this.movies = movies;
     }
 
 }

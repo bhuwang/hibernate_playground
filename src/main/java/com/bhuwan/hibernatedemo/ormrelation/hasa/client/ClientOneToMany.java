@@ -11,8 +11,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-import com.bhuwan.hibernatedemo.ormrelation.hasa.mto.model.Actor;
-import com.bhuwan.hibernatedemo.ormrelation.hasa.mto.model.Movie;
+import com.bhuwan.hibernatedemo.ormrelation.hasa.otm.model.Actor;
+import com.bhuwan.hibernatedemo.ormrelation.hasa.otm.model.Movie;
 
 /**
  * @author bhuwan

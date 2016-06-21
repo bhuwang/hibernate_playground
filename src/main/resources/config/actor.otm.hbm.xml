@@ -10,7 +10,7 @@
 	more than once. Each document may also contain definitions of an arbitrary 
 	number of queries, and import declarations of arbitrary classes. -->
 
-<hibernate-mapping package="com.bhuwan.hibernatedemo.ormrelation.hasa.mto.model">
+<hibernate-mapping package="com.bhuwan.hibernatedemo.ormrelation.hasa.otm.model">
 	<class name="Actor" table="actor" schema="hibernatedemo">
 		<id name="id" column="aid">
 			<!-- Options: assigned, increment, identity, sequence, native, hilo, foreign, 
