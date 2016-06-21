@@ -24,9 +24,6 @@
 		<!-- <property name="format_sql">true</property> -->
 
 		<!-- mapping of entities -->
-		<mapping resource="config/student.hbm.xml" />
-		<mapping resource="config/employee.hbm.xml" />
-		<mapping resource="config/bookmovie.hbm.xml" />
-		<mapping resource="config/emp_table_per_class.hbm.xml" />
+		<mapping resource="config/emp_table_per_subclass.hbm.xml" />
 	</session-factory>
 </hibernate-configuration>

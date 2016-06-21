@@ -1,0 +1,37 @@
+<!-- Hibernate Mapping DTD. -->
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- An instance of this XML document may contain mappings for an arbitrary 
+	number of classes. The class mappings may contain associations to classes 
+	mapped in the same document or in another document. No class may be mapped 
+	more than once. Each document may also contain definitions of an arbitrary 
+	number of queries, and import declarations of arbitrary classes. -->
+
+<hibernate-mapping>
+	<class name="com.bhuwan.hibernatedemo.ormrelation.model.Employee"
+		schema="hibernatedemo">
+		<id name="id" />
+		<property name="name" />
+		<property name="email" />
+		<property name="salary" />
+
+		<union-subclass name="com.bhuwan.hibernatedemo.ormrelation.model.SEmployee"
+			table="sw_emp_orm_rel">
+			<property name="tool"></property>
+		</union-subclass>
+
+		<union-subclass name="com.bhuwan.hibernatedemo.ormrelation.model.HEmployee"
+			table="hw_emp_orm_rel">
+			<property name="wh"></property>
+		</union-subclass>
+
+		<union-subclass name="com.bhuwan.hibernatedemo.ormrelation.model.Admin"
+			table="adm_emp_orm_rel">
+			<property name="branchName"></property>
+		</union-subclass>
+
+	</class>
+</hibernate-mapping>
