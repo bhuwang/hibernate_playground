@@ -1,0 +1,31 @@
+<!-- Hibernate Mapping DTD. -->
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- An instance of this XML document may contain mappings for an arbitrary 
+	number of classes. The class mappings may contain associations to classes 
+	mapped in the same document or in another document. No class may be mapped 
+	more than once. Each document may also contain definitions of an arbitrary 
+	number of queries, and import declarations of arbitrary classes. -->
+
+<hibernate-mapping package="com.bhuwan.hibernatedemo.ormrelation.hasa.mtm.model">
+	<class name="Course" table="course" schema="hibernatedemo">
+		<id name="cid">
+			<!-- Options: assigned, increment, identity, sequence, native, hilo, foreign, 
+				custom generator -->
+			<generator class="native" />
+			<!-- <generator class="com.bhuwan.hibernatedemo.pkgeneration.CustomIdentityGenerator" 
+				/> -->
+		</id>
+		<property name="cname" />
+		<property name="fee" />
+		<set name="faculties" table="course_faculty">
+			<key column="cid" />
+			<many-to-many class="Faculty">
+				<column name="fid" />
+			</many-to-many>
+		</set>
+	</class>
+</hibernate-mapping>
