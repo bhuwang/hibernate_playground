@@ -25,5 +25,6 @@
 
 		<!-- mapping of entities -->
 		<mapping class="com.bhuwan.hibernatedemo.ormrelation.annotation.Student" />
+		<mapping class="com.bhuwan.hibernatedemo.ormrelation.annotation.validator.Employee" />
 	</session-factory>
 </hibernate-configuration>
